@@ -1,0 +1,26 @@
+body {
+    background-color:honeydew;
+    font-size:25px;
+/* typography */
+}
+p {
+    background-color:thistle;
+    color:darkgreen;
+    border: 5px dashed mediumseagreen;
+    text-align:center;
+    padding: 10px 50px 70px 90px;
+    margin: 50px 50px 50px 90px; 
+}
+h1 {
+    color:rgb(255, 32, 545, 0.5);
+    text-align:center;
+    padding:20px;
+}
+h2 {
+    color:#f23cd3;
+} 
+
+.special {
+    background-color:lightcoral;
+    font: size 50px;
+}
