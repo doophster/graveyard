@@ -6,6 +6,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: cursive;
   background-color: rgb(244, 241, 232);
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
@@ -22,10 +23,10 @@ h1 {
 
 h3 {
   text-align: center;
+  font-family: cursive;
   font-size: 50px;
   border-top: 4px dotted rgb(0, 0, 0);
   border-bottom: 4px dotted rgb(0, 0, 0);
-  font-family: cursive;
   font-weight: bold;
   padding: 20px 0;
   margin: 40px 20px 20px;
@@ -33,15 +34,15 @@ h3 {
 
 p {
   font-size: 20px;
-  font-family: italic;
+  font-family: cursive;
   text-align: left;
   padding-left: 40px
 }
 
 /*other*/
 .flower-grid {
+  font-family: cursive;
     display: grid;
-    grid-template-columns: repeat(auto-fit 250px);
     gap: 15px;
     width: fit-content;
     margin: 40px auto;
@@ -49,29 +50,9 @@ p {
     align-items: start;
 }
 
-.flower-grid details {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-}
-
-.flower-grid summary {
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.flower-grid ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.flower-grid li {
-    margin-bottom: 4px;
-}
-
 .poem {
   background-color: rgb(250, 247, 239);
+  font-family: cursive;
   border: 1px solid rgb(0, 0, 0);
   padding: 40px;
   margin: 40px auto;
@@ -99,6 +80,7 @@ details {
 /*flowers and their meanings*/
 summary {
   font-weight: bold;
+  font-family: cursive;
   font-size: 18px;
   cursor: pointer;
   list-style: none;
