@@ -26,6 +26,16 @@ h2 {
   margin-bottom: 90px;
 }
 
+a {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 p {
   text-align: left;
   font-size: 20px;
