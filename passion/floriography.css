@@ -28,7 +28,7 @@ body {
 font-size: 20px;
 }
 /*alignment for headers*/
-h1, h5 {text-align: center;
+h1, h5, h2 {text-align: center;
 }
 
 /* typography things*/
