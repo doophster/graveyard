@@ -19,9 +19,18 @@ h1 {
   margin-bottom: 90px;
 }
 
+h2 {
+  font-size: 17px;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+}
+
 a {
   text-decoration: underline;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 213, 62);
 }
 
 a:hover {

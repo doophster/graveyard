@@ -31,6 +31,9 @@ font-size: 20px;
 h1, h5, h2 {text-align: center;
 }
 
+h2 {
+  font-size: 15px;
+}
 /* typography things*/
 body{  
   color: rgb(175, 255, 54);}
