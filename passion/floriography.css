@@ -5,6 +5,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin: 35px; 
 }
 /*border stuff*/
     body {
@@ -12,22 +15,13 @@ body {
     border-width:  28px;
     border-style:  solid; 
   }
-/*margins*/
-body {
-  margin: 35px; 
-}
 /* fonts --> not working?*/
 @font-face {
     font-family: 'linternational'; src: url("linternational.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
-/*backup font*/
-body {
-  font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
-}
-/*alignment for headers*/
+/*alignment things*/
 h1, h5, h6 {text-align: center;
 }
 
