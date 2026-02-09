@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   color: rgb(0, 0, 0);
 }
+
 h1 {
   font-size: 80px;
   font-family: cursive;
@@ -39,17 +40,34 @@ p {
 
 /*other*/
 .flower-grid {
-    box-decoration-break:slice;
     display: grid;
-    gap: 1.5px;
-    max-width: 2000px;
-    margin: 40px;
+    grid-template-columns: repeat(auto-fit 250px);
+    gap: 15px;
+    width: fit-content;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: start;
 }
+
 .flower-grid details {
-    background: rgb(255, 255, 255);
-    padding: 8px 6px;
-    border-radius: 28px;
-    width: 50%
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.flower-grid summary {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.flower-grid ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.flower-grid li {
+    margin-bottom: 4px;
 }
 
 .poem {
