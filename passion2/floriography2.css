@@ -18,6 +18,13 @@ h1 {
   text-align: center;
   margin-bottom: 90px;
 }
+h2 {
+  font-size: 16px;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 90px;
+}
 
 p {
   text-align: left;
