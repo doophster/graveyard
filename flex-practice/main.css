@@ -1,0 +1,31 @@
+* {
+    box-sizing: border box;
+}
+
+.main-container{
+background-color:cornflowerblue;
+padding:10px;
+height:800px;
+display:flex;
+flex-direction: column;
+}
+
+.top {
+    background-color:turquoise;
+    height:20%;
+    display:flex;
+    flex-direction:row;
+    gap: 10px;
+
+}
+
+.top-item {
+   background-color: salmon;
+   width:100%;
+}
+
+.bottom {
+    background-color:powderblue;
+    height:80%;
+}
+

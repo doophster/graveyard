@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.moon {
+    height: 340px;
+    background-color: #010309;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.moon-img {
+    max-height: 240px;
+    width: auto;
+    filter: drop-shadow(0 0 30px rgba(180,160,120,0.4));
+}
+.alien-img {
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    height: 120px;
+    width: auto;
+    animation: alien-bob 2.5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 4px 12px rgba(0,80,0,0.4));
+}
+    @keyframes alien-bob {
+    from { transform: translateY(0) rotate(-3deg); }
+    to   { transform: translateY(-12px) rotate(3deg); }
+}
+
+.space {
+    background: black;
+}
+
+.stars {
+    width: 100%;
+    color: rgba(130, 155, 255, 0.65);
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: pre;
+    padding: 40px 20px;
+    animation: star-fade 5s ease-in-out infinite alternate;  
+}
+
+.ufo-scene {
+    position: -webkit-sticky;
+    position: sticky;     
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: hover 3s ease-in-out infinite alternate;
+    z-index: 9999;
+}
+
+.ufo-img {
+    width: 260px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(100,200,255,0.5)) drop-shadow(0 0 40px rgba(100,255,180,0.25));
+}
+
+.beam {
+    width: 0;
+    height: 0;
+    border-left:  70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 220px solid rgba(140,255,180,0.12);
+    margin-top: -4px;
+    filter: blur(6px);
+    z-index: 1;
+    animation: beam-pulse 2s ease-in-out infinite alternate;
+}
+
+.abducted-cow-img {
+    width: 100px;
+    height: auto;
+    margin-top: -180px; /* float inside the beam */
+    z-index: 2;
+    animation: dangle 2s ease-in-out infinite alternate;
+    transform-origin: top center;
+    filter: drop-shadow(0 0 8px rgba(140,255,180,0.4));
+}
+
+.field {
+    position: relative;
+    height: 700px;
+    overflow: visible;
+}
+
+.field-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    z-index: 0;
+}
+
+.cow-img {
+    position: absolute;
+    height: 60px;           
+    width: auto;
+    z-index: 2;
+    bottom: 38px;            
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.cow-1 { left:  8%; top: 50%; }
+.cow-2 { left:  35%; top: 55%; }
+.cow-3 { left:  46%; top: 35%; }
+.cow-4 { right: 22%; top: 70%; }
+.cow-5 { right:  8%; top: 20%; }
+
+
+/*opening*/
+.tv {
+    align-items: center;
+
+}

@@ -1,0 +1,55 @@
+* {
+    box-sizing: border box;
+}
+
+.block {
+    background-color:olive;
+    padding:10px;
+    margin:10px;
+}
+
+.inline {
+    background-color: plum;
+    width:100px;
+    height:100px;
+    padding:10px;
+    margin:30px;
+    display:inline-block;
+}
+
+.container {
+    background-color:orchid;
+    padding:20px;
+    height:600px;
+    display:flex;
+
+    /* 
+        flex-direction will determine the main-acis:width:width: width: 
+        row = horizontal main axis
+        column = veritcal main axis
+    */
+    flex-direction:column;
+
+    flex-wrap:wrap;
+    
+    /* justify-content aligns along main-axis */
+    justify-content:space-between;
+    
+    /* align-items aligns items along the cross-axis and is used for not wrapping flexboxes*/
+    align-items:flex-end;
+
+    gap:10px;
+}
+
+.item {
+    background-color:slateblue;
+    padding:10px;
+    border:1px solid;
+    width:100px;
+}
+
+.special {
+    background-color: cornsilk;
+    order:-1;
+}
+
