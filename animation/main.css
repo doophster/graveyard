@@ -1,0 +1,125 @@
+* {
+    box-sizing: border box;
+}
+
+body {
+    margin:0;
+}
+
+.square {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    /* animation-name:test;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-fill-mode: both; */
+
+    /* 1st time value is animation-duration 2nd time is the animation-delay */
+    animation: test 2s 4s infinite ease-in-out alternate both;
+}
+
+@keyframes test {
+    0% {
+        background-color: darkseagreen;
+    }
+    50% {
+        background-color: plum;
+    }
+    100% {
+        background-color: royalblue;
+    }
+}
+
+.container {
+    background-color:darkslateblue;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: blink 4s infinite alternate; 
+}
+
+@keyframes blink {
+    o% {
+        scale: 1 1;
+    }
+    100% {
+        scale: .5 0;
+    }
+}
+
+.circle {
+    background:darkseagreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: pulse 4s infinite alternate linear;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: lightgreen;
+        scale:1;
+    }
+    100% {
+        background-color: darkkhaki;
+        scale:1.4;
+    }
+}
+
+.box {
+    background:darkkhaki;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin{
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.mover {
+    background: darkkhaki;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    animation: move 4s infinite;
+}
+
+@keyframes move{
+    0%{
+        left:-150px;
+    }
+    100%{
+        left:100vw;
+    }
+}
+
+.changer {
+    background: darkkhaki;
+    width: 100px;
+    height: 100px;
+    transition: background 2s, 
+                border-radius 4s, 
+                rotate 4s;
+}
+
+.changer:hover {
+    background-color: lightgreen;
+    border-radius: 100%;
+    rotate:360deg;
+}
