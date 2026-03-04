@@ -23,24 +23,12 @@ body {
     animation: blink 5s infinite alternate linear; 
 }
 
-@keyframes blink {
-    o% {
-        scale: 100 100;
-        rotate: 360deg;
-    }
-    0% {
-        scale: 0 0;
-        rotate: 720deg;
-    }
-}
-
 /* ── base ── */
 .door {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 140px;
     opacity: 0;
-    border-radius: 100%;
     animation: appear 0.1s steps(1) forwards,
                bounceX var(--bx) ease infinite alternate,
                bounceY var(--by) ease infinite alternate;
@@ -64,6 +52,10 @@ body {
 .c10 {background-color: mediumvioletred; }
 
 /* waves */
+.d0 {
+    animation-delay: 1.5s, 1.5s, 1.5s; 
+    animation-timing-function: linear;
+}
 .d1 { 
     animation-delay: 2s,  2s,  2s; 
     animation-timing-function: linear;
@@ -86,7 +78,7 @@ body {
 }
 
 @keyframes appear {
-    to { opacity: 85%; }
+    to { opacity: 100%; }
 }
 
 /* ── horizontal bounce ── */
