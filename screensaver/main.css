@@ -100,7 +100,7 @@ body {
 }
 
 /* wave 1 */
-.b1  { left:5vw;   top:10vh; --bx:2.7s; --by:2.1s; --tx:88vw;  --ty:80vh; }
+.b1  { left:52vw;   top:20vh; --bx:2.7s; --by:2.1s; --tx:88vw;  --ty:80vh; }
 .b2  { left:20vw;  top:60vh; --bx:2.3s; --by:3.4s; --tx:70vw;  --ty:-55vh; }
 .b3  { left:50vw;  top:5vh;  --bx:1.1s; --by:2.0s; --tx:-45vw; --ty:85vh; }
 .b4  { left:75vw;  top:40vh; --bx:2.8s; --by:1.9s; --tx:-70vw; --ty:50vh; }
