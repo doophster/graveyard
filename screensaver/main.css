@@ -28,7 +28,7 @@ body {
         scale: 100 100;
         rotate: 360deg;
     }
-    100% {
+    0% {
         scale: 0 0;
         rotate: 720deg;
     }
@@ -150,14 +150,3 @@ body {
 .b38 { left:15vw;  top:68vh; --bx:4.8s; --by:5.8s; --tx:-20vw; --ty:55vh; }
 .b39 { left:98vw;  top:18vh; --bx:2.8s; --by:6.1s; --tx:12vw;  --ty:-83vh; }
 .b40 { left:32vw;  top:2vh; --bx:5.0s; --by:3.3s; --tx:-93vw; --ty:17vh; }
-
-@keyframes blink {
-    o% {
-        scale: 100 100;
-        rotate: 360deg;
-    }
-    100% {
-        scale: 0 0;
-        rotate: 720deg;
-    }
-}
