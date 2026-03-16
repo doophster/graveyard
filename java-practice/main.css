@@ -7,7 +7,8 @@ body {
 }
 
 .dark {
-    background:cadetblue;
+    background:darkolivegreen;
+    transition: .3s;
 }
 
 .menu {
