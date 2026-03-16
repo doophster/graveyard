@@ -1,11 +1,17 @@
 * {
     box-sizing: border box;
 }
+
 body {
     background:cadetblue;
 }
+
+.dark {
+    background:cadetblue;
+}
+
 .menu {
-    background: lightcoral;
+    background: lightgoldenrodyellow;
     font-size: 150%;
     height: 100vh;
     width:300px;
