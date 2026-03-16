@@ -6,6 +6,7 @@
     </head>
     <body>
         <button onclick="change()">click me :p</button>
+        <button onclick="">make it glow...</button>
 
         <div class="menu">
             Hello World!
@@ -15,12 +16,19 @@
         <script>
             var menu = document.querySelector(".menu");
             var gear = document.querySelector(".gear");
-            function change() {
-                console.log(':-l');
-                menu.classList.toggle("active");
-                gear.classList.toggle("spin");
-                document.body.classList.toggle("dark");
-        }
+                function change() {
+                    console.log(':-l');
+                    menu.classList.toggle("active");
+                    gear.classList.toggle("spin");
+                    document.body.classList.toggle("dark");
+                }
+
+                function glow() {
+                    menu.classList.toggle("glow");
+                    gear.classList.toggle("glow");
+                }
+
+
         </script>
     </body>
     </html>
