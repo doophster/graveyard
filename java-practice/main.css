@@ -1,3 +1,8 @@
 * {
     box-sizing: border box;
 }
+
+.active {
+    background: lightblue;
+    font-size: 150%;
+}
