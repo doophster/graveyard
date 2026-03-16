@@ -17,7 +17,8 @@ body {
     padding:20px;
     text-align:center;
 
-    transition: all .3s .5s;
+    transition: right .3s,
+    opacity .3s .1s;
 }
 
 .active {
