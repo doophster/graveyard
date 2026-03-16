@@ -50,4 +50,5 @@ body {
 
 .glow {
     background:lightgoldenrodyellow;
+    transition: .7s;
 }
