@@ -21,7 +21,7 @@ body {
 }
 
 .active {
-    right:0;
+    right:0px;
     opacity:1;
 }
 
