@@ -12,7 +12,7 @@ body {
 }
 
 .menu {
-    background: lightgoldenrodyellow;
+    background: gold;
     font-size: 150%;
     height: 100vh;
     width:300px;
@@ -25,7 +25,7 @@ body {
     text-align:center;
 
     transition: right .3s,
-    opacity .3s .1s;
+    opacity .3s .1s, background .3s;
 }
 
 .active {
@@ -34,14 +34,14 @@ body {
 }
 
 .gear {
-    background: lightgoldenrodyellow;
+    background: gold;
     width:100px;
     height:100px;
     position:fixed;
     bottom:30px;
     left:30px;
 
-    transition: rotate .3s;
+    transition: rotate .3s, background .3s;
 }
 
 .spin {
@@ -49,5 +49,5 @@ body {
 }
 
 .glow {
-    background:gold;
+    background:lightgoldenrodyellow;
 }
