@@ -17,7 +17,7 @@ body {
     padding:20px;
     text-align:center;
 
-    transition: all .3s 2s;
+    transition: all .3s .5s;
 }
 
 .active {
