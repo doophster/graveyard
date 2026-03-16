@@ -47,3 +47,7 @@ body {
 .spin {
     rotate:180deg;
 }
+
+.glow {
+    background:gold;
+}
