@@ -33,8 +33,10 @@ body {
     position:fixed;
     bottom:30px;
     left:30px;
+
+    transition: rotate .3s;
 }
 
 .spin {
-    rotate:45deg;
+    rotate:180deg;
 }
