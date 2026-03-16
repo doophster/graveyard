@@ -13,13 +13,15 @@ body {
     right:0;
     top:0;
 
-    display: none;
+    opacity:0;
 
     padding:20px;
     text-align:center;
+
+    transition: all .3s;
 }
 
 .active {
-    display:block;
+    opacity:1;
 }
 
