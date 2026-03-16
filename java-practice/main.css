@@ -26,3 +26,15 @@ body {
     opacity:1;
 }
 
+.gear {
+    background: lightgoldenrodyellow;
+    width:100px;
+    height:100px;
+    position:fixed;
+    bottom:30px;
+    left:30px;
+}
+
+.spin {
+    rotate:45deg
+}
