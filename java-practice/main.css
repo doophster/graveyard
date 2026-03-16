@@ -1,8 +1,25 @@
 * {
     box-sizing: border box;
 }
+body {
+    background:cadetblue;
+}
+.menu {
+    background: lightcoral;
+    font-size: 150%;
+    height: 100vh;
+    width:300px;
+    position:fixed;
+    right:0;
+    top:0;
+
+    display: none;
+
+    padding:20px;
+    text-align:center;
+}
 
 .active {
-    background: lightblue;
-    font-size: 150%;
+    display:block;
 }
+
