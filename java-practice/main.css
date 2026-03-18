@@ -41,7 +41,8 @@ body {
     bottom:30px;
     left:30px;
 
-    transition: rotate .3s, background .3s;
+    transition: rotate .3s, 
+    background .3s;
 }
 
 .spin {
