@@ -18,4 +18,8 @@ $(".reveal-btn").click(
     }
 );
 
-$(".draggable").draggable();
+$(".draggable").draggable({
+    containment: ".container",
+    scroll: false,
+    
+});
