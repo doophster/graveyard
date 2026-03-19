@@ -1,3 +1,65 @@
 * {
     box-sizing: border box;
 }
+
+body {
+    margin:0;
+}
+
+.buttons {
+    position:fixed;
+    top:20px;
+    left:20px;
+}
+
+.container {
+    background:honeydew;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.container.dark {
+    background:darkseagreen
+}
+
+.box {
+    background-color:khaki;
+    width:100px;
+    height:100px;
+    animation: spin 4s infinite linear;
+    animation-play-state:paused;
+}
+
+.box.dark {
+    background:olive;
+}
+.box.spin {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0;
+    }
+    100% {
+        rotate:360deg;
+    }
+}
+
+.chair {
+    width:200px;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    opacity:0;
+}
+
+.chair.show {
+    opacity:1;
+}
+
+.draggable {
+    cursor:grab;
+}
