@@ -1,3 +1,4 @@
-body {
-    background-color:rgb(110, 157, 234)
+* {
+    background-color:rgb(110, 157, 234);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
