@@ -23,7 +23,7 @@ body {
     animation: blink 5s infinite alternate linear; 
 }
 
-/* ── base ── */
+/* base stuff */
 .door {
     position: absolute;
     width: 70px;
@@ -39,7 +39,7 @@ body {
     overflow: visible;
 }
 
-/* ── colors (PCB palette) ── */
+/*  colors  */
 .c1 { background-color: cornflowerblue; }
 .c2 { background-color: crimson; }
 .c3 { background-color: lightgoldenrodyellow; }
@@ -51,7 +51,7 @@ body {
 .c9 {background-color: goldenrod; }
 .c10 {background-color: mediumvioletred; }
 
-/* waves */
+/* animation: d = delay */
 .d0 {
     animation-delay: 1.5s, 1.5s, 1.5s; 
     animation-timing-function: linear;
