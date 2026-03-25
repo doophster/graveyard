@@ -81,7 +81,7 @@ body {
     to { opacity: 100%; }
 }
 
-/* ── horizontal bounce ── */
+/* horizontal bounce */
 @keyframes bounceX {
     from { transform: translateX(0); }
     to   { transform: translateX(var(--tx)); }
