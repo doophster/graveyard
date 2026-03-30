@@ -1,3 +1,36 @@
 * {
     box-sizing: border box;
+    block-size: 100vh, 100vw;
+}
+body {
+    margin:0;
+}
+
+.buttons {
+    position:fixed;
+    top:20px;
+    left:20px;
+}
+
+.container {
+    height:100%;
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+}
+
+.key {
+    width:200px;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    opacity:0;
+}
+
+.key.show {
+    opacity:1;
+}
+
+.draggable {
+    cursor:grab;
 }
