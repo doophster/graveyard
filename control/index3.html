@@ -1,27 +1,42 @@
-<!DOCTYPE html>
-    <html>
-        <div class="buttons">
-            <button class="reveal-btn">reveal</button>
+<!doctype html>
+<html>
+    <head>
+        <title>locksmith</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <div class="chests-row">
+            <div class="chest-wrap">
+                <div class="chest" data-n="1"></div>
+                <span class="chest-label">I</span>
+            </div>
+            <div class="chest-wrap">
+                <div class="chest" data-n="2"></div>
+                <span class="chest-label">II</span>
+            </div>
+            <div class="chest-wrap">
+                <div class="chest" data-n="3"></div>
+                <span class="chest-label">III</span>
+            </div>
+            <div class="chest-wrap">
+                <div class="chest" data-n="4"></div>
+                <span class="chest-label">IV</span>
+            </div>
+            <div class="chest-wrap">
+                <div class="chest" data-n="5"></div>
+                <span class="chest-label">V</span>
+            </div>
         </div>
 
-        <div class="container">
-            <div class="key draggable"></div>
+        <img src="key.png" id="key">
+
+        <div id="reveal">
+            <img src="medieval kitty.jpeg">
         </div>
-
-        <img src="key.png" class="key draggable">
-
-            <section class="locksmith">
-        <img src="store.png" alt="store" class="store-img">
-
-        <img src="chest.png" alt="chest" class="chest-1">
-        <img src="chest.png" alt="chest" class="chest-2">
-        <img src="chest.png" alt="chest" class="chest-3">
-        <img src="chest.png" alt="chest" class="chest-4">
-        <img src="chest.png" alt="chest" class="chest-5">
-    </section>
 
         <script src="jquery-4.0.0.min.js"></script>
         <script src="jquery-ui.min.js"></script>
         <script src="main.js"></script>
-            </body>
-    </html>
+    </body>
+</html>

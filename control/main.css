@@ -1,36 +1,155 @@
 * {
-    box-sizing: border box;
-    block-size: 100vh, 100vw;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
 }
+
 body {
-    margin:0;
+    background-color: #170c15;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.buttons {
-    position:fixed;
-    top:20px;
-    left:20px;
+/* buttons */
+button {
+    background-color: #1a2018;
+    padding: 12px 28px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
-.container {
-    height:100%;
-    display:flex;
-    align-items:center;
-    overflow: hidden;
+button a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
 }
 
-.key {
-    width:200px;
-    position:fixed;
-    bottom:20px;
-    right:10px;
-    opacity:0;
+/* backgrounds */
+.background1,
+.background2
+.background3 {
+    position: fixed;
+    z-index: -1;
 }
 
-.key.show {
-    opacity:1;
+.background1 img,
+.background2 img
+.background3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.draggable {
-    cursor:grab;
+/* chests */
+.chests-row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.chest-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.chest {
+    width: 110px;
+    height: 90px;
+    cursor: default;
+}
+
+[data-n="1"] { background-color: aqua; }
+[data-n="2"] { background-color: plum; }
+[data-n="3"] { background-color: violet; }
+[data-n="4"] { background-color: slateblue ; }
+[data-n="5"] { background-color: lightgreen; }
+
+.chest-label {
+    color: whitesmoke;
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+}
+
+/* key */
+#key {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 120px;
+    cursor: grab;
+}
+
+#key:active {
+    cursor: grabbing;
+}
+
+/* wrong chest */
+@keyframes wrongFade {
+    0%   { 
+        opacity: 1; transform: scale(1); 
+    }
+    100% { 
+        opacity: 0; transform: scale(0.7); 
+    }
+}
+
+.chest-wrong {
+    animation: wrongFade 0.5s ease-in forwards;
+    pointer-events: none;
+}
+
+/* key reveal */
+@keyframes spinStop {
+    0%   { 
+        transform: rotate(0deg); 
+    }
+    60%  { 
+        transform: rotate(900deg); 
+    }
+    80%  { 
+        transform: rotate(1040deg); 
+    }
+    100% { 
+        transform: rotate(1080deg); }
+}
+
+.key-spin {
+    animation: spinStop 2s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+}
+
+/* what's in the chest? :o */
+#reveal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#reveal.show {
+    display: flex;
+}
+
+#reveal.fade {
+    opacity: 1;
+}
+
+#reveal img {
+    max-width: 480px;
+    max-height: 80vh;
+    border: 4px solid #8b53a3;
 }
