@@ -3,7 +3,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    font-size: large;
+    font-size: medium;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 /* buttons */
 button {
     background-color: #1a2018;
-    padding: 12px 28px;
+    padding: 10px 15px;
     margin: 8px;
     cursor: pointer;
     border-radius: 20px;
@@ -29,6 +29,12 @@ button a {
     text-decoration: none;
     font-size: 1rem;
     letter-spacing: 0.1em;
+}
+
+.question {
+    color: whitesmoke;
+    padding: 20px;
+    font-size: large;
 }
 
 /* backgrounds */
