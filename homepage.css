@@ -122,3 +122,14 @@
     text-align: center;
 }
 
+.grave-7 {
+    background: violet;
+    z-index: 4;
+    position: absolute;
+    left: 3000px;
+    top: 200px;
+    padding: 20px;
+    margin: 20px; 
+    width: 100px;
+    text-align: center;
+}
