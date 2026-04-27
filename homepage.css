@@ -31,7 +31,7 @@
     background-color: darkolivegreen;
     z-index: 2;
     position: fixed;
-    height: 150px;
+    height: 177px;
     width: 100vw;
     bottom:0;
 }
@@ -43,14 +43,14 @@
     left:0;
     height: 100vh;
     width: 500px;
-    top: 40px;
+    top: 50px;
 }
 
 .tree img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
+    display: flex;
 }
 
 .graves {
