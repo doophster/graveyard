@@ -2,31 +2,39 @@
     margin: 0;
     scroll-behavior: smooth;
     width: 100%;
-    padding:0;
-    color: palegreen;
-    font-display:swap;
+    padding:10px;
+    color: hotpink;
     top: 150px;
+    background: rgb(7, 13, 45) ;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=IM+Fell+English:ital@0;1&display=swap');
 
+
 body {
-    background: rgb(7, 13, 45) ;
     text-align: center;
     font-family: Creepster;
-    font-size: larger;
+    font-size: 30px;
     top: 150px;
 }
 
-.gate {
-    width: 200px;
-    height: 200px;
-    padding: 200px;
+.things {
+    text-align: left;
+    font-family: Creepster;
+    font-size: 20px;
+    top: 150px;
 }
+
+
 
 a {
   color: palegreen;
   font-display: none;
   font-style: oblique;
   text-decoration: none; /* no underline */
+  text-align: left;
+  cursor: 
+
+ul {
+  list-style-type:none;
 }
